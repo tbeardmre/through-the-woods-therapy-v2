@@ -15,9 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
+
+    <!-- Page transition Div -->
+
+    <div class="transition transition-1 is-active">
+        <img src="public/full-logo.png" alt="Through The Woods Therapy Logo" style="width: 250px;" class="animate__animated animate__flipInX">
+    </div>
 
     <!-- Home Page & Navigation Bar -->
 
@@ -25,11 +33,16 @@
         <br>
         <nav>
             <img src="public/logo.png" alt="Through The Woods Therapy Logo">
-            <ul>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#services">SERVICES</a></li>
+                <li class="nav-item"><a href="#about">ABOUT</a></li>
+                <li class="nav-item nav-to-page"><a href="contact.html">CONTACT</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <div class="home-page">
           <div class="home-content">
@@ -146,6 +159,7 @@
         <br>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

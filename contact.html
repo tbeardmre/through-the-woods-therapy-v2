@@ -17,9 +17,17 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
+
+    <!-- Page transition Div -->
+
+    <div class="transition transition-1 is-active">
+        <img src="public/full-logo.png" alt="Through The Woods Therapy Logo" style="width: 250px;" class="animate__animated animate__flipInX">
+    </div>
 
     <!-- Navigation Bar -->
 
@@ -28,7 +36,7 @@
         <nav>
             <img src="public/logo.png" alt="Through The Woods Therapy Logo">
             <ul>
-                <li><a href="index.html">RETURN HOME</a></li>
+                <li class="nav-to-page"><a href="index.html">RETURN HOME</a></li>
             </ul>
         </nav>
     </header>
@@ -84,7 +92,7 @@
                 </div>
                 <div>
                     <label for="message">Message</label><br>
-                    <textarea name="message" id="message" name="message" required minlength="10"></textarea><br><br>
+                    <textarea name="message" id="message" name="message" required minlength="10" style="resize: none"></textarea><br><br>
                 </div>
                 <button type="submit">Send</button>
             </form>
@@ -110,9 +118,7 @@
         <br>
     </footer>
 
-    <!-- <h4>"Vulnerability sounds like truth and feels like courage. Truth and courage aren’t always comfortable,
-                    but they are never weakness"</h4> -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>

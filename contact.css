@@ -171,10 +171,8 @@ main {
     border: none;
     border-radius: 30px;
     margin-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 20px 15px 20px;
+    width: 300px;
     background-color: #577171;
   }
   
@@ -182,6 +180,7 @@ main {
     height: 150px;
     width: 600px;
     border-radius: 15px;
+    padding: 15px 20px 15px 20px;
     background-color: #577171;
     border-style: none;
   }
