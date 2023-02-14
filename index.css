@@ -222,6 +222,30 @@ nav ul li a:hover {
     margin: 20px 30px 0px 30px;
     padding: 0px 30px 0px 30px;
   }
+
+  .home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-content h1 {
+    text-align: center;
+  }
+
+  .home-content h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  nav {
+    margin: 0px 10px 0px 10px;
+  }
+  .home-page {
+    margin: 20px 10px 20px 10px;
+  }
 }
 
 /* Mobile Menu */
@@ -359,13 +383,25 @@ nav ul li a:hover {
 
 @media (max-width: 900px) {
   .statement-container {
-    margin: 0px 30px 0px 30px;
+    padding: 0px 75px 0px 75px;
   }
 }
 
 @media (max-width: 680px) {
   .statement {
     height: 250px;
+  }
+}
+
+@media (max-width: 435px) {
+  .statement {
+    height: 350px;
+  }
+}
+
+@media (max-width: 350px) {
+  .statement-container {
+    padding: 0px 50px 0px 50px;
   }
 }
 
@@ -452,6 +488,29 @@ nav ul li a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  #services {
+    padding: 50px 45px 50px 45px
+  }
+}
+
+@media (max-width: 680px) {
+  #services {
+    padding: 40px 30px 40px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  #services {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .services-title {
+    padding-bottom: 0px;
+  }
+}
+
 /* About */
 
 #about {
@@ -497,6 +556,24 @@ nav ul li a:hover {
 @media (max-width: 1400px) {
   #about {
     padding: 100px 100px 100px 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  #about {
+    padding: 50px 45px 50px 45px;
+  }
+}
+
+@media (max-width: 680px) {
+  #about {
+    padding: 40px 30px 40px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  #about {
+    padding: 30px 10px 30px 10px;
   }
 }
 
@@ -557,5 +634,68 @@ footer a {
 @media (max-width: 1400px) {
   footer section {
     margin: 0px 100px 0px 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer section {
+    margin: 0px 45px 0px 45px;
+  }
+
+  .footer-quote {
+    width: 60%;
+  }
+}
+
+@media (max-width: 680px) {
+  footer section {
+    margin: 0px 30px 0px 30px;
+  }
+
+  footer h3 {
+    font-size: 14px;
+  }
+
+  footer h4 {
+    font-size: 10px;
+  }
+
+  footer h5 {
+    font-size: 11px;
+  }
+
+  footer a {
+    font-size: 9px;
+  }
+
+  footer img {
+    width: 70px;
+  }
+
+  .footer-quote {
+    width: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  footer section {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-quote {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  footer section {
+    margin: 0px 10px 0px 10px;
   }
 }
